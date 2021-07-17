@@ -1,5 +1,6 @@
 .topbar {
      height: 70px;
+     background-color: #ffffff;
      display: flex;
      font-size: 1.2rem;
      position: sticky;

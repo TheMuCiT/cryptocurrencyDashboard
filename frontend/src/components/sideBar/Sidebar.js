@@ -16,29 +16,29 @@ export const Sidebar = () => {
                </div>
                <NavLink exact activeClassName='active' to='/'>
                     <div className='sidebarLinks'>
-                         <Category color='#ffffff' size='24' />
+                         <Category color='#485aff' size='24' />
                          <div className='sidebarLinkText'>Dashboard</div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/'>
+               <NavLink exact activeClassName='active' to='/about'>
                     <div className='sidebarLinks'>
                          <Calendar color='#ffffff' size='24' />
                          <div className='sidebarLinkText'>Calendar</div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/'>
+               <NavLink exact activeClassName='active' to='/about'>
                     <div className='sidebarLinks'>
                          <ToDo color='#ffffff' size='24' />
                          <div className='sidebarLinkText'>To-Do</div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/'>
+               <NavLink exact activeClassName='active' to='/about'>
                     <div className='sidebarLinks'>
                          <Settings color='#ffffff' size='24' />
                          <div className='sidebarLinkText'>Settings</div>
                     </div>
                </NavLink>
-               <NavLink exact activeClassName='active' to='/'>
+               <NavLink exact activeClassName='active' to='/about'>
                     <div className='sidebarLinks'>
                          <Projects color='#ffffff' size='24' />
                          <div className='sidebarLinkText'>Projects</div>

@@ -23,7 +23,6 @@
      display: block;
 }
 .sidebarLinks {
-     background-color: #485aff;
      height: 66px;
      width: 90px;
 
@@ -36,4 +35,12 @@
      margin-top: 2px;
      font-size: 14px;
      font-weight: 500;
+}
+
+.active {
+     background-color: #ffffff;
+}
+
+.active .sidebarLinkText {
+     color: #485aff;
 }

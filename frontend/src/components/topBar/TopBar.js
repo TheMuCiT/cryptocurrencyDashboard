@@ -20,22 +20,22 @@ const TopBar = () => {
                     </div>
                </div>
                <div className='topbarRight'>
-                    <NavLink to='/'>
+                    <NavLink activeClassName='topActive' to='/'>
                          <div className='topbarRightIcon'>
                               <Star color='black' />
                          </div>
                     </NavLink>
-                    <NavLink to='/'>
+                    <NavLink activeClassName='topActive' to='/'>
                          <div className='topbarRightIcon'>
                               <Bookmark color='black' />
                          </div>
                     </NavLink>
-                    <NavLink to='/'>
+                    <NavLink activeClassName='topActive' to='/'>
                          <div className='topbarRightIcon'>
                               <Notification color='black' />
                          </div>
                     </NavLink>
-                    <NavLink to='/'>
+                    <NavLink activeClassName='topActive' to='/'>
                          <div className='topbarRightIcon'>
                               <Profile color='black' />
                          </div>
