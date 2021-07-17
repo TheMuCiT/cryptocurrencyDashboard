@@ -69,7 +69,7 @@ const Dashboard = () => {
                          </div>
                     </div>
                     <div className='dashboardRight'>
-                         <div className='dashboardSmallTitle'>Calendar</div>
+                         <div className='dashboardSmallTitle'>Calendars</div>
                          <div className='dashboardCalendarWrapper'>
                               <div className='dashboardCalendar'>
                                    <Calendar />
