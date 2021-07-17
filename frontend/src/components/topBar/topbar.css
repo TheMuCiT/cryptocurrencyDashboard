@@ -1,0 +1,52 @@
+.topbar {
+     height: 70px;
+     display: flex;
+     font-size: 1.2rem;
+     position: sticky;
+     top: 0;
+     z-index: 999;
+     margin-left: 90px;
+}
+
+.topbarLeft {
+     flex: 50%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-left: 40px;
+}
+
+.topbarRight {
+     flex: 50%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     margin-right: 40px;
+}
+
+.topbarSearchContainer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     margin-right: 10px;
+     height: 25px;
+     padding: 0px 10px;
+}
+
+.topbarInput {
+     margin-left: 20px;
+     border: none;
+     height: 100%;
+     outline: none;
+     width: 240px;
+     color: rgb(0, 0, 0);
+}
+
+.topbarRightIcon {
+     margin-right: 15px;
+}
+
+.topbarRightArrow {
+     padding-left: 5px;
+}

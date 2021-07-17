@@ -1,0 +1,392 @@
+.dashboard {
+     display: flex;
+}
+.dashboardLeftTop {
+     flex: 50%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-left: 40px;
+}
+
+.dashboardRightTop {
+     flex: 50%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     margin-right: 40px;
+}
+
+.dashboardDropdownWrapper {
+     display: flex;
+}
+
+.dashboardDropdown {
+     background-color: rgb(250, 249, 249);
+     position: relative;
+     width: 180px;
+     height: 40px;
+     display: flex;
+     vertical-align: middle;
+     text-align: start;
+     margin-left: 20px;
+     border-radius: 5px;
+}
+
+.buttonDropdown {
+     margin-left: 5px;
+     background-color: rgb(250, 249, 249);
+     color: rgb(0, 0, 0);
+     font-size: 16px;
+     padding-left: 5px;
+     border: none;
+     cursor: pointer;
+}
+
+.dashboardDropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f1f1f1;
+     min-width: 160px;
+     overflow: auto;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+}
+
+/*Second */
+
+.dashboardSecond {
+     display: flex;
+     margin-top: 30px;
+}
+
+.dashboardLeft {
+     flex: 50%;
+     display: flexbox;
+     justify-content: flex-start;
+     align-items: center;
+     margin-left: 40px;
+     margin-right: 20px;
+}
+
+.dashboardRight {
+     flex: 50%;
+     display: flexbox;
+     justify-content: flex-start;
+     align-items: center;
+     margin-right: 40px;
+     margin-left: 20px;
+}
+
+/*Overview*/
+
+.dashboardOverview {
+     margin-top: 20px;
+     height: 120px;
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     border-radius: 10px;
+}
+.dashboardOverviewBox {
+     flex: 25%;
+     display: block;
+     padding: 10px 15px;
+}
+
+.dashboardOverviewBox.border {
+     border-top-style: none;
+     border-right-style: solid;
+     border-bottom-style: none;
+     border-left-style: none;
+     border-color: grey;
+     border-width: 1px;
+}
+
+/*Calendar*/
+
+.dashboardCalendarWrapper {
+     margin-top: 20px;
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     border-radius: 10px;
+}
+
+.dashboardCalendar {
+     border-radius: 10px;
+     flex: 65%;
+     background-color: rgb(255, 255, 255);
+}
+
+.dashboardCalendarMeetings {
+     flex: 35%;
+     display: flexbox;
+     justify-content: center;
+     align-items: center;
+     margin: 5px 15px;
+}
+
+.dashboardCalendarFilter {
+     margin: 10px 0px;
+     padding-left: 20px;
+     height: 35px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     border-color: #485aff;
+     border-width: 1px;
+     border-style: solid;
+     border-radius: 5px;
+}
+
+.dashboardCalendarEvent {
+     margin: 10px 0px;
+     display: flex;
+}
+
+.dashboardCalendarEventTitle {
+     margin-bottom: 5px;
+}
+
+/*Dashborad Third*/
+
+.dashboardThird {
+     display: flex;
+     margin-top: 30px;
+}
+
+.dashboardLeft.up {
+     margin-top: -160px;
+}
+
+/*Tasks*/
+
+.dashboardTasks {
+     margin-top: 20px;
+     background-color: rgb(255, 255, 255);
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+.dashboardSearchContainer {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     border-radius: 10px;
+     margin-right: 10px;
+     height: 25px;
+     padding: 10px 25px;
+     margin-top: 10px;
+}
+
+.dashboardSearchIcon {
+     margin-right: 15px;
+}
+
+.dashboardSearchInput {
+     margin-left: 20px;
+     border: none;
+     height: 100%;
+     outline: none;
+     width: 240px;
+     color: rgb(0, 0, 0);
+}
+
+.dashboardTaskList {
+     display: flexbox;
+     margin-bottom: 20px;
+}
+
+.dashboardTaskItem {
+     margin-left: 25px;
+     display: flex;
+     align-items: center;
+     margin-top: 10px;
+}
+
+.dashboardTaskItemLeft {
+     flex: 90%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+
+.dashboardTaskItemRight {
+     flex: 10%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     margin-right: 20px;
+}
+
+/*Show task info*/
+
+.dashboardShowtaskinfoWrapper {
+     margin-top: 20px;
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     border-radius: 10px;
+}
+
+.dashboardShowtaskinfoTasktitle {
+     display: flex;
+     justify-content: space-between;
+     align-self: center;
+     padding: 5px 10px;
+     width: 90%;
+}
+.dashboardShowtaskinfoTasktitleLeft {
+     font-size: 20px;
+     font-weight: bold;
+     margin-left: 20px;
+     margin-top: 10px;
+}
+
+.dashboardShowtaskinfoTasktitleRight {
+     font-weight: bold;
+     font-size: 20px;
+     margin-right: 20px;
+}
+
+.dashboardShowtaskinfoList {
+     border-top: 1px solid rgb(107, 107, 107);
+     margin-top: 5px;
+     padding: 10px 20px 10px 50px;
+}
+
+.dashboardShowtaskinfoListItem {
+     margin-bottom: 5px;
+     display: flex;
+     align-items: center;
+     height: 40px;
+}
+
+.dashboardShowtaskinfoItemName,
+.dashboardShowtaskinfoItemSubtask {
+     flex: 20%;
+}
+
+.dashboardShowtaskinfoItemProgress {
+     flex: 25%;
+}
+
+.dashboardShowtaskinfoItemDetails {
+     flex: 35%;
+}
+
+/*progressBar*/
+
+.progress {
+     margin: 10px 0px 0px 0px;
+     background-color: rgb(103, 149, 214);
+     border-radius: 20px;
+     height: 7px;
+     width: 90%;
+}
+
+.progress-done {
+     height: 100%;
+     border-radius: 20px;
+     width: 50%;
+     background-color: rgb(43, 28, 180);
+}
+
+.verticalProgressBar {
+     border-radius: 20px;
+     height: 39px;
+     width: 5px;
+     margin-right: 10px;
+}
+
+/*Text*/
+
+.dashboardTitle {
+     font-weight: bold;
+     font-size: 30px;
+}
+
+.dashboardSmallTitle {
+     font-weight: bold;
+     font-size: 25px;
+}
+
+.dashboardOverviewBoxText {
+     font-weight: bold;
+     font-size: 35px;
+}
+
+.dashboardCalendarEventTitle {
+     font-weight: bold;
+     font-size: 15px;
+}
+
+.dashboardCalendarEventTime {
+     font-size: 13px;
+}
+
+.dashboardTaskItemText {
+     font-weight: bold;
+     font-size: 12px;
+     margin-left: 10px;
+}
+
+.dashboardTaskItemTextSmall {
+     font-size: 12px;
+     margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+     .dashboard {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .dashboardRightTop {
+          display: flex;
+     }
+
+     .dashboardDropdownWrapper {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: space-between;
+     }
+
+     .dashboardSecond {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .dashboardLeft {
+          margin-left: 50;
+     }
+
+     .dashboardRight {
+          margin-top: 20px;
+          margin-left: 40px;
+          margin-right: 20px;
+     }
+
+     .dashboardSmallTitle {
+          text-align: center;
+     }
+
+     .dashboardLeft.up {
+          margin-top: 0px;
+     }
+
+     .dashboardThird {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .dashboardTasks {
+          margin-right: 0;
+     }
+
+     @media screen and (max-width: 800px) {
+          .dashboardOverviewBox {
+               flex: 50%;
+          }
+     }
+}
