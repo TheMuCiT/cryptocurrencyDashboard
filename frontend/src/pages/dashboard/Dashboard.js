@@ -21,7 +21,7 @@ const Dashboard = () => {
                <div className='dashboard'>
                     <div className='dashboardLeftTop'>
                          <BackArrow />
-                         <div className='dashboardTitle'>Dashboard</div>
+                         <div className='dashboardTitle'>Dashboards</div>
                     </div>
                     <div className='dashboardRightTop'>
                          <div className='dashboardDropdownWrapper'>
