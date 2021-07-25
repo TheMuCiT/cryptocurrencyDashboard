@@ -6,6 +6,7 @@ import Star from '../../icons/Star'
 import Bookmark from '../../icons/Bookmark'
 import Notification from '../../icons/Notification'
 import Profile from '../../icons/Profile'
+import DropDownArrow from '../../icons/DropDownArrow'
 
 import './topbar.css'
 const TopBar = () => {
@@ -14,7 +15,7 @@ const TopBar = () => {
                <div className='topbarLeft'>
                     <div className='topbarSearchContainer'>
                          <div className='topbarSearchIcon'>
-                              <Search color='black' size='20' />
+                              <Search color='black' size={20} />
                          </div>
                          <input type='text' className='topbarInput' placeholder='Search...' />
                     </div>
@@ -42,7 +43,7 @@ const TopBar = () => {
                     </NavLink>
 
                     <div className='topbarRightArrow'>
-                         <Star color='blue' />
+                         <DropDownArrow size={15} />
                     </div>
                </div>
           </div>

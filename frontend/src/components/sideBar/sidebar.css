@@ -25,7 +25,6 @@
 .sidebarLinks {
      height: 66px;
      width: 90px;
-
      display: table-cell;
      vertical-align: middle;
      text-align: center;
@@ -43,4 +42,15 @@
 
 .active .sidebarLinkText {
      color: #485aff;
+}
+
+.sidebarLinkIconActive {
+     display: none;
+}
+
+.active .sidebarLinkIcon {
+     display: none;
+}
+.active .sidebarLinkIconActive {
+     display: block;
 }

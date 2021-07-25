@@ -1,6 +1,7 @@
 .dashboard {
      display: flex;
 }
+
 .dashboardLeftTop {
      flex: 50%;
      display: flex;
@@ -82,6 +83,7 @@
 
 .dashboardOverview {
      margin-top: 20px;
+     padding-bottom: 20px;
      height: 120px;
      background-color: rgb(255, 255, 255);
      display: flex;
@@ -91,6 +93,7 @@
      flex: 25%;
      display: block;
      padding: 10px 15px;
+     height: 100%;
 }
 
 .dashboardOverviewBox.border {
@@ -98,8 +101,13 @@
      border-right-style: solid;
      border-bottom-style: none;
      border-left-style: none;
-     border-color: grey;
+     border-color: rgb(226, 226, 226);
      border-width: 1px;
+}
+
+.dashboardOverviewTitle {
+     display: flex;
+     align-items: center;
 }
 
 /*Calendar*/
@@ -113,16 +121,15 @@
 
 .dashboardCalendar {
      border-radius: 10px;
-     flex: 65%;
      background-color: rgb(255, 255, 255);
 }
 
 .dashboardCalendarMeetings {
-     flex: 35%;
+     width: 100%;
      display: flexbox;
      justify-content: center;
      align-items: center;
-     margin: 5px 15px;
+     margin: 5px 35px;
 }
 
 .dashboardCalendarFilter {
@@ -203,6 +210,14 @@
      align-items: center;
      margin-top: 10px;
 }
+.dashboardTaskItemIMGWrapper {
+     display: flex;
+}
+.dashboardTaskItemIMG {
+     width: 35px;
+     height: 35px;
+     border-radius: 10px;
+}
 
 .dashboardTaskItemLeft {
      flex: 90%;
@@ -223,10 +238,11 @@
 
 .dashboardShowtaskinfoWrapper {
      margin-top: 20px;
-     background-color: #fff;
+     background-color: rgb(255, 255, 255);
      display: flex;
      flex-direction: column;
      border-radius: 10px;
+     z-index: 10;
 }
 
 .dashboardShowtaskinfoTasktitle {
@@ -250,36 +266,90 @@
 }
 
 .dashboardShowtaskinfoList {
-     border-top: 1px solid rgb(107, 107, 107);
+     border-top: 1px solid rgba(191, 191, 191, 0.5);
      margin-top: 5px;
-     padding: 10px 20px 10px 50px;
+     padding: 10px 20px 10px 30px;
+     display: flex;
 }
 
+.dashboardShowtaskinfoListLeft {
+     flex: 50%;
+}
+
+.dashboardShowtaskinfoListRight {
+     flex: 50%;
+}
 .dashboardShowtaskinfoListItem {
      margin-bottom: 5px;
      display: flex;
      align-items: center;
      height: 40px;
+     margin: 0px 5px;
 }
 
-.dashboardShowtaskinfoItemName,
-.dashboardShowtaskinfoItemSubtask {
-     flex: 20%;
+.dashboardShowtaskinfoListItem.button {
+     width: 50%;
+     cursor: pointer;
 }
 
-.dashboardShowtaskinfoItemProgress {
-     flex: 25%;
-}
-
-.dashboardShowtaskinfoItemDetails {
+.dashboardShowtaskinfoItemName {
      flex: 35%;
+     font-size: 13px;
+     font-weight: bold;
+}
+
+.dashboardShowtaskinfoItemAction {
+     flex: 65%;
+     font-size: 13px;
+     font-weight: 500;
+}
+.dashboardShowtaskinfoListItemAdd {
+     font-size: 35px;
+     color: var(--color-main);
+     margin-right: 10px;
+     font-weight: bold;
+}
+
+.dashboardShowInfoAdd {
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     background-color: #f6f8f9;
+     border-radius: 0px 0px 10px 10px;
+}
+
+.dashboardShowInfoAddIcon {
+     display: flex;
+     margin-right: 20px;
+}
+
+.dashboardShowInfoAddIMG {
+     width: 43px;
+     height: 43px;
+     border-radius: 50%;
+}
+
+.dashboardShowInfoAddDetails {
+     background-color: #ffffff;
+     width: 100%;
+     height: 50px;
+     margin-right: 20px;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.dashboardShowInfoAddDetailsArrow {
+     margin-right: 20px;
+     display: flex;
 }
 
 /*progressBar*/
 
 .progress {
      margin: 10px 0px 0px 0px;
-     background-color: rgb(103, 149, 214);
+     background-color: #d6d9fc;
      border-radius: 20px;
      height: 7px;
      width: 90%;
@@ -289,7 +359,7 @@
      height: 100%;
      border-radius: 20px;
      width: 50%;
-     background-color: rgb(43, 28, 180);
+     background-color: #485aff;
 }
 
 .verticalProgressBar {
@@ -304,6 +374,14 @@
 .dashboardTitle {
      font-weight: bold;
      font-size: 30px;
+     margin-left: 10px;
+}
+
+.dashboardOverviewTitleText {
+     margin-left: 10px;
+     font-weight: 500;
+     color: #808080;
+     font-size: 14px;
 }
 
 .dashboardSmallTitle {
@@ -313,7 +391,7 @@
 
 .dashboardOverviewBoxText {
      font-weight: bold;
-     font-size: 35px;
+     font-size: 40px;
 }
 
 .dashboardCalendarEventTitle {
@@ -336,7 +414,11 @@
      margin-left: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+.dashboardShowInfoAddDetailsText {
+     margin-left: 20px;
+}
+
+@media screen and (max-width: 1450px) {
      .dashboard {
           display: flex;
           flex-direction: column;

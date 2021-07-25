@@ -2,22 +2,31 @@ import React from 'react'
 
 import Search from '../../icons/Search'
 import Calendar from '../../components/calendar/Calendar'
+import BackArrow from '../../icons/BackArrow'
+import LogsIcon from '../../icons/LogsIcon'
+import SalaryFundIcon from '../../icons/SalaryFundIcon'
+import ActsIcon from '../../icons/ActsIcon'
+import WorkersIcon from '../../icons/WorkersIcon'
+
+import WorkingIMG from '../../images/Working.jpg'
+import DocumentIMG from '../../images/Document.jpg'
+import DataIMG from '../../images/Data.jpg'
 
 import './dashboard.css'
+import AddIcon from '../../icons/AddIcon'
 
 const Dashboard = () => {
      return (
           <div className='dashboardLevel'>
                <div className='dashboard'>
                     <div className='dashboardLeftTop'>
+                         <BackArrow />
                          <div className='dashboardTitle'>Dashboard</div>
                     </div>
                     <div className='dashboardRightTop'>
                          <div className='dashboardDropdownWrapper'>
                               <div className='dashboardDropdown'>
-                                   <button onclick='myFunction()' className='buttonDropdown'>
-                                        All Products
-                                   </button>
+                                   <button className='buttonDropdown'>All Products</button>
                                    <div id='myDropdown' className='dashboardDropdown-content'>
                                         <a href='/'>First</a>
                                         <a href='/'>Second</a>
@@ -25,9 +34,7 @@ const Dashboard = () => {
                                    </div>
                               </div>
                               <div className='dashboardDropdown'>
-                                   <button onclick='myFunction()' className='buttonDropdown'>
-                                        Status
-                                   </button>
+                                   <button className='buttonDropdown'>Status</button>
                                    <div id='myDropdown' className='dashboardDropdown-content'>
                                         <a href='/'>First</a>
                                         <a href='/'>Second</a>
@@ -42,26 +49,44 @@ const Dashboard = () => {
                          <div className='dashboardSmallTitle'>Overview</div>
                          <div className='dashboardOverview'>
                               <div className='dashboardOverviewBox border'>
-                                   Logs
+                                   <div className='dashboardOverviewTitle'>
+                                        <LogsIcon />
+                                        <div className='dashboardOverviewTitleText'>Logs</div>
+                                   </div>
                                    <div className='dashboardOverviewBoxText'>437</div>
                                    <div className='progress'>
                                         <div className='progress-done' data-done='70' />
                                    </div>
                               </div>
                               <div className='dashboardOverviewBox border '>
-                                   Acts<div className='dashboardOverviewBoxText'>32</div>
+                                   <div className='dashboardOverviewTitle'>
+                                        <ActsIcon />
+                                        <div className='dashboardOverviewTitleText'>Acts</div>
+                                   </div>
+
+                                   <div className='dashboardOverviewBoxText'>32</div>
                                    <div className='progress'>
                                         <div className='progress-done' data-done='70' />
                                    </div>
                               </div>
                               <div className='dashboardOverviewBox border'>
-                                   Workers<div className='dashboardOverviewBoxText'>68</div>
+                                   <div className='dashboardOverviewTitle'>
+                                        <WorkersIcon />
+                                        <div className='dashboardOverviewTitleText'>Workers</div>
+                                   </div>
+
+                                   <div className='dashboardOverviewBoxText'>68</div>
                                    <div className='progress'>
                                         <div className='progress-done' data-done='70' />
                                    </div>
                               </div>
                               <div className='dashboardOverviewBox'>
-                                   Salary fund<div className='dashboardOverviewBoxText'>2461$</div>
+                                   <div className='dashboardOverviewTitle'>
+                                        <SalaryFundIcon />
+                                        <div className='dashboardOverviewTitleText'>Salary fund</div>
+                                   </div>
+
+                                   <div className='dashboardOverviewBoxText'>2461$</div>
                                    <div className='progress'>
                                         <div className='progress-done' data-done='70' />
                                    </div>
@@ -136,7 +161,7 @@ const Dashboard = () => {
                          <div className='dashboardTasks'>
                               <div className='dashboardSearchContainer'>
                                    <div className='dashboardSearchIcon'>
-                                        <Search color='black' size='20' />
+                                        <Search color='black' size={20} />
                                    </div>
                                    <input
                                         type='text'
@@ -147,128 +172,176 @@ const Dashboard = () => {
                               <div className='dashboardTaskList'>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img
+                                                       src={WorkingIMG}
+                                                       alt='img'
+                                                       className='dashboardTaskItemIMG'
+                                                  />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Barton waited twenty always repair in within we do. an delighted
                                                   offending curiosity my is dashwoods at.
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img
+                                                       src={DocumentIMG}
+                                                       alt='img'
+                                                       className='dashboardTaskItemIMG'
+                                                  />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Through studied shyness evening bed
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img src={DataIMG} alt='img' className='dashboardTaskItemIMG' />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Tolerably earnestly middleton extremely distrusts she boy now
                                                   not...
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img
+                                                       src={WorkingIMG}
+                                                       alt='img'
+                                                       className='dashboardTaskItemIMG'
+                                                  />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Barton waited twenty always repair in within we do. an delighted
                                                   offending curiosity my is dashwoods at.
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img
+                                                       src={WorkingIMG}
+                                                       alt='img'
+                                                       className='dashboardTaskItemIMG'
+                                                  />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Barton waited twenty always repair in within we do. an delighted
                                                   offending curiosity my is dashwoods at.
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img
+                                                       src={DocumentIMG}
+                                                       alt='img'
+                                                       className='dashboardTaskItemIMG'
+                                                  />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Through studied shyness evening bed
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img src={DataIMG} alt='img' className='dashboardTaskItemIMG' />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Tolerably earnestly middleton extremely distrusts she boy now
                                                   not...
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img
+                                                       src={WorkingIMG}
+                                                       alt='img'
+                                                       className='dashboardTaskItemIMG'
+                                                  />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Barton waited twenty always repair in within we do. an delighted
                                                   offending curiosity my is dashwoods at.
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img
+                                                       src={DocumentIMG}
+                                                       alt='img'
+                                                       className='dashboardTaskItemIMG'
+                                                  />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Through studied shyness evening bed
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
                                    <div className='dashboardTaskItem'>
                                         <div className='dashboardTaskItemLeft'>
-                                             <Search color='black' size='20' />
+                                             <div className='dashboardTaskItemIMGWrapper'>
+                                                  <img src={DataIMG} alt='img' className='dashboardTaskItemIMG' />
+                                             </div>
                                              <div className='dashboardTaskItemText'>
                                                   Tolerably earnestly middleton extremely distrusts she boy now
                                                   not...
                                              </div>
                                         </div>
                                         <div className='dashboardTaskItemRight'>
-                                             <Search color='black' size='20' />
+                                             <Search color='black' size={20} />
                                              <div className='dashboardTaskItemTextSmall'>Nov 18</div>
                                         </div>
                                    </div>
@@ -283,31 +356,58 @@ const Dashboard = () => {
                                    <div className='dashboardShowtaskinfoTasktitleRight'>...</div>
                               </div>
                               <div className='dashboardShowtaskinfoList'>
-                                   <div className='dashboardShowtaskinfoListItem'>
-                                        <div className='dashboardShowtaskinfoItemName'>Assignee</div>
-                                        <div className='dashboardShowtaskinfoItemProgress'>No assignee</div>
-                                        <div className='dashboardShowtaskinfoItemSubtask'>Effort</div>
-                                        <div className='dashboardShowtaskinfoItemDetails'>-</div>
-                                   </div>
-                                   <div className='dashboardShowtaskinfoListItem'>
-                                        <div className='dashboardShowtaskinfoItemName'>Due date</div>
-                                        <div className='dashboardShowtaskinfoItemProgress'>No due date</div>
-                                        <div className='dashboardShowtaskinfoItemSubtask'>Priority</div>
-                                        <div className='dashboardShowtaskinfoItemDetails'>-</div>
-                                   </div>
-                                   <div className='dashboardShowtaskinfoListItem'>
-                                        <div className='dashboardShowtaskinfoItemName'>Projects</div>
-                                        <div className='dashboardShowtaskinfoItemProgress'>In progess</div>
-                                        <div className='dashboardShowtaskinfoItemSubtask'>Description</div>
-                                        <div className='dashboardShowtaskinfoItemDetails'>
-                                             Add more details to this task...
+                                   <div className='dashboardShowtaskinfoListLeft'>
+                                        <div className='dashboardShowtaskinfoListItem'>
+                                             <div className='dashboardShowtaskinfoItemName'>Assignee</div>
+                                             <div className='dashboardShowtaskinfoItemAction'>No assignee</div>
+                                        </div>
+                                        <div className='dashboardShowtaskinfoListItem'>
+                                             <div className='dashboardShowtaskinfoItemName'>Due data</div>
+                                             <div className='dashboardShowtaskinfoItemAction'>No due date</div>
+                                        </div>
+                                        <div className='dashboardShowtaskinfoListItem'>
+                                             <div className='dashboardShowtaskinfoItemName'>Projects</div>
+                                             <div className='dashboardShowtaskinfoItemAction'>In progess</div>
+                                        </div>
+                                        <div className='dashboardShowtaskinfoListItem'>
+                                             <div className='dashboardShowtaskinfoItemName'>Dependencies</div>
+                                             <div className='dashboardShowtaskinfoItemAction'>
+                                                  Add dependencies
+                                             </div>
                                         </div>
                                    </div>
-                                   <div className='dashboardShowtaskinfoListItem'>
-                                        <div className='dashboardShowtaskinfoItemName'>Dependencies</div>
-                                        <div className='dashboardShowtaskinfoItemProgress'>Add dependencies</div>
-                                        <div className='dashboardShowtaskinfoItemSubtask'>Add subtask</div>
-                                        <div className='dashboardShowtaskinfoItemDetails'></div>
+                                   <div className='dashboardShowtaskinfoListRight'>
+                                        <div className='dashboardShowtaskinfoListItem'>
+                                             <div className='dashboardShowtaskinfoItemName'>Effort</div>
+                                             <div className='dashboardShowtaskinfoItemAction'>-</div>
+                                        </div>
+                                        <div className='dashboardShowtaskinfoListItem'>
+                                             <div className='dashboardShowtaskinfoItemName'>Priority</div>
+                                             <div className='dashboardShowtaskinfoItemAction'>-</div>
+                                        </div>
+                                        <div className='dashboardShowtaskinfoListItem'>
+                                             <div className='dashboardShowtaskinfoItemName'>Description</div>
+                                             <div className='dashboardShowtaskinfoItemAction'>
+                                                  Add more details to this task...
+                                             </div>
+                                        </div>
+                                        <div className='dashboardShowtaskinfoListItem button'>
+                                             <div className='dashboardShowtaskinfoListItemAdd'>+</div>
+                                             <div className='dashboardShowtaskinfoItemName'>Add subtask</div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div className='dashboardShowInfoAdd'>
+                                   <div className='dashboardShowInfoAddIcon'>
+                                        <img src={DataIMG} alt='img' className='dashboardShowInfoAddIMG' />
+                                   </div>
+                                   <div className='dashboardShowInfoAddDetails'>
+                                        <div className='dashboardShowInfoAddDetailsText'>
+                                             Add more details to this task...
+                                        </div>
+                                        <div className='dashboardShowInfoAddDetailsArrow'>
+                                             <AddIcon size={20} />
+                                        </div>
                                    </div>
                               </div>
                          </div>

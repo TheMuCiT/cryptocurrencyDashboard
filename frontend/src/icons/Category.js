@@ -24,6 +24,6 @@ Catagory.propTypes = {
 }
 
 Catagory.defaultProps = {
-     color: 'green',
+     color: '#ffffff',
      size: 27,
 }
