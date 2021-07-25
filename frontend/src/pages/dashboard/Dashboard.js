@@ -1,37 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
+import DropdownNotification from '../../components/dropdown/DropdownNotification'
+import Calendar from '../../components/calendar/Calendar'
 
 import Search from '../../icons/Search'
-import Calendar from '../../components/calendar/Calendar'
 import BackArrow from '../../icons/BackArrow'
 import LogsIcon from '../../icons/LogsIcon'
 import SalaryFundIcon from '../../icons/SalaryFundIcon'
 import ActsIcon from '../../icons/ActsIcon'
 import WorkersIcon from '../../icons/WorkersIcon'
+import AddIcon from '../../icons/AddIcon'
 
 import WorkingIMG from '../../images/Working.jpg'
 import DocumentIMG from '../../images/Document.jpg'
 import DataIMG from '../../images/Data.jpg'
 
 import './dashboard.css'
-import AddIcon from '../../icons/AddIcon'
 
 const Dashboard = () => {
+     const [dropdown, setdropdown] = useState(true)
+
+     const onMouseEnter = () => {
+          setdropdown(false)
+     }
+     const onMouseLeave = () => {
+          setdropdown(true)
+     }
+
      return (
           <div className='dashboardLevel'>
                <div className='dashboard'>
                     <div className='dashboardLeftTop'>
                          <BackArrow />
-                         <div className='dashboardTitle'>Dashboards</div>
+                         <div className='dashboardTitle'>Dashboard</div>
                     </div>
                     <div className='dashboardRightTop'>
                          <div className='dashboardDropdownWrapper'>
-                              <div className='dashboardDropdown'>
-                                   <button className='buttonDropdown'>All Products</button>
-                                   <div id='myDropdown' className='dashboardDropdown-content'>
-                                        <a href='/'>First</a>
-                                        <a href='/'>Second</a>
-                                        <a href='/'>third</a>
-                                   </div>
+                              <div
+                                   className='dashboardDropdown plus'
+                                   onMouseEnter={onMouseEnter}
+                                   onMouseLeave={onMouseLeave}
+                              >
+                                   {dropdown && <DropdownNotification />}
+                                   <div className='buttonDropdown'>All Products</div>
                               </div>
                               <div className='dashboardDropdown'>
                                    <button className='buttonDropdown'>Status</button>

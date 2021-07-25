@@ -1,0 +1,71 @@
+.dropdown-menu {
+     background: rgb(146, 146, 146);
+     width: 200%;
+     position: absolute;
+     right: 0;
+     top: 60px;
+     list-style: none;
+     text-align: center;
+     border-radius: 10px;
+}
+
+.dropdown-menu.clicked {
+     display: none;
+}
+
+.dropNotiTitle {
+     font-weight: 500;
+     margin: 20px;
+}
+
+.dropnNotiList {
+}
+
+.dropnNotiItem {
+     display: flex;
+}
+
+.dropNotiIma {
+     background-color: red;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex: 25%;
+}
+
+.dropNotiMiddle {
+     flex: 48%;
+     display: flexbox;
+     text-align: left;
+     background-color: green;
+}
+
+.dropnNotiTime {
+     flex: 27%;
+     background-color: yellow;
+}
+
+/*TEXT*/
+
+.dropnNotiName {
+     font-weight: 500;
+     font-size: 18px;
+     padding: 2px 0px;
+}
+
+.dropnNotiInfo {
+     font-size: 10px;
+     padding: 2px 0px;
+}
+
+.dropnNotiMessage {
+     font-size: 11px;
+}
+
+.dropnNotiTime {
+     text-align: end;
+     font-style: italic;
+     padding-right: 10px;
+     padding-top: 10px;
+     font-size: 12px;
+}

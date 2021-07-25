@@ -3,7 +3,7 @@
 }
 
 .dashboardLeftTop {
-     flex: 50%;
+     flex: 55%;
      display: flex;
      justify-content: flex-start;
      align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .dashboardRightTop {
-     flex: 50%;
+     flex: 45%;
      display: flex;
      justify-content: flex-end;
      align-items: center;
@@ -23,15 +23,18 @@
 }
 
 .dashboardDropdown {
-     background-color: #ffffff;
+     background-color: #be1c1c;
      position: relative;
-     width: 180px;
+     width: 200px;
      height: 40px;
      display: flex;
-     vertical-align: middle;
-     text-align: start;
      margin-left: 20px;
      border-radius: 5px;
+     align-items: center;
+}
+
+.dashboardDropdown.plus {
+     width: 250px;
 }
 
 .buttonDropdown {
@@ -62,7 +65,7 @@
 }
 
 .dashboardLeft {
-     flex: 50%;
+     flex: 55%;
      display: flexbox;
      justify-content: flex-start;
      align-items: center;
@@ -71,7 +74,7 @@
 }
 
 .dashboardRight {
-     flex: 50%;
+     flex: 45%;
      display: flexbox;
      justify-content: flex-start;
      align-items: center;
@@ -273,11 +276,11 @@
 }
 
 .dashboardShowtaskinfoListLeft {
-     flex: 50%;
+     flex: 55%;
 }
 
 .dashboardShowtaskinfoListRight {
-     flex: 50%;
+     flex: 45%;
 }
 .dashboardShowtaskinfoListItem {
      margin-bottom: 5px;
