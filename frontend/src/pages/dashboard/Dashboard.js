@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DropdownNotification from '../../components/dropdown/DropdownNotification'
 import Calendar from '../../components/calendar/Calendar'
+import DropdownStatus from '../../components/dropdown/DropdownStatus'
 
 import Search from '../../icons/Search'
 import BackArrow from '../../icons/BackArrow'
@@ -15,15 +16,23 @@ import DocumentIMG from '../../images/Document.jpg'
 import DataIMG from '../../images/Data.jpg'
 
 import './dashboard.css'
+import DropDownArrowIcon from '../../icons/DropDownArrowIcon'
 
 const Dashboard = () => {
-     const [dropdown, setdropdown] = useState(true)
+     const [dropdown, setdropdown] = useState(false)
+     const [dropdownStatus, setdropdownStatus] = useState(false)
 
      const onMouseEnter = () => {
-          setdropdown(false)
+          setdropdown(true)
      }
      const onMouseLeave = () => {
-          setdropdown(true)
+          setdropdown(false)
+     }
+     const onMouseEnterStatus = () => {
+          setdropdownStatus(true)
+     }
+     const onMouseLeaveStatus = () => {
+          setdropdownStatus(false)
      }
 
      return (
@@ -42,13 +51,19 @@ const Dashboard = () => {
                               >
                                    {dropdown && <DropdownNotification />}
                                    <div className='buttonDropdown'>All Products</div>
+                                   <div className='dashboardDropdownArrow'>
+                                        <DropDownArrowIcon size={15} />
+                                   </div>
                               </div>
-                              <div className='dashboardDropdown'>
-                                   <button className='buttonDropdown'>Status</button>
-                                   <div id='myDropdown' className='dashboardDropdown-content'>
-                                        <a href='/'>First</a>
-                                        <a href='/'>Second</a>
-                                        <a href='/'>third</a>
+                              <div
+                                   className='dashboardDropdown'
+                                   onMouseEnter={onMouseEnterStatus}
+                                   onMouseLeave={onMouseLeaveStatus}
+                              >
+                                   {dropdownStatus && <DropdownStatus />}
+                                   <div className='buttonDropdown'>Status</div>
+                                   <div className='dashboardDropdownArrow'>
+                                        <DropDownArrowIcon size={15} />
                                    </div>
                               </div>
                          </div>

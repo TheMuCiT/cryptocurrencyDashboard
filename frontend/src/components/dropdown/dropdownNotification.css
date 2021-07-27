@@ -1,12 +1,16 @@
-.dropdown-menu {
-     background: rgb(146, 146, 146);
+.dropNoti {
      width: 200%;
      position: absolute;
      right: 0;
-     top: 60px;
+     top: 40px;
+     text-align: center;
+}
+
+.dropdown-menu {
+     background: rgb(255, 255, 255);
      list-style: none;
      text-align: center;
-     border-radius: 10px;
+     border-radius: 15px;
 }
 
 .dropdown-menu.clicked {
@@ -15,7 +19,8 @@
 
 .dropNotiTitle {
      font-weight: 500;
-     margin: 20px;
+     margin-top: 20px;
+     padding: 20px 0px;
 }
 
 .dropnNotiList {
@@ -23,26 +28,34 @@
 
 .dropnNotiItem {
      display: flex;
+     padding: 10px 0px;
+}
+
+.dropnNotiItem:hover {
+     background-color: #d6d9fc;
 }
 
 .dropNotiIma {
-     background-color: red;
      display: flex;
      align-items: center;
      justify-content: center;
      flex: 25%;
 }
 
+.dropNotiImg {
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+}
+
 .dropNotiMiddle {
      flex: 48%;
      display: flexbox;
      text-align: left;
-     background-color: green;
 }
 
 .dropnNotiTime {
      flex: 27%;
-     background-color: yellow;
 }
 
 /*TEXT*/

@@ -1,0 +1,35 @@
+.dropStatus {
+     width: 100%;
+     position: absolute;
+     right: 0;
+     top: 40px;
+     text-align: start;
+}
+
+.dropStatusList {
+     padding: 20px 0px;
+     margin-top: 20px;
+     display: block;
+     align-items: start;
+     text-align: left;
+}
+
+.dropStatusItem {
+     height: 45px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     padding-left: 10px;
+}
+
+.dropStatusItem:hover {
+     background-color: #d6d9fc;
+}
+
+/* TEXT */
+
+.dropStatusText {
+     margin-left: 10px;
+     font-weight: 600;
+     font-size: 14px;
+}
