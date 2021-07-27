@@ -357,7 +357,6 @@
 
 .progress {
      margin: 10px 0px 0px 0px;
-     background-color: #d6d9fc;
      border-radius: 20px;
      height: 7px;
      width: 90%;
@@ -366,8 +365,6 @@
 .progress-done {
      height: 100%;
      border-radius: 20px;
-     width: 50%;
-     background-color: #485aff;
 }
 
 .verticalProgressBar {

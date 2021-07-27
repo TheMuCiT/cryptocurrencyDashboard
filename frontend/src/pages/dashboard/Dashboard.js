@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import DropdownNotification from '../../components/dropdown/DropdownNotification'
 import Calendar from '../../components/calendar/Calendar'
 import DropdownStatus from '../../components/dropdown/DropdownStatus'
+import ProgressBar from '../../components/ProgressBar/ProgressBar'
 
 import Search from '../../icons/Search'
 import BackArrow from '../../icons/BackArrow'
@@ -10,13 +11,13 @@ import SalaryFundIcon from '../../icons/SalaryFundIcon'
 import ActsIcon from '../../icons/ActsIcon'
 import WorkersIcon from '../../icons/WorkersIcon'
 import AddIcon from '../../icons/AddIcon'
+import DropDownArrowIcon from '../../icons/DropDownArrowIcon'
 
 import WorkingIMG from '../../images/Working.jpg'
 import DocumentIMG from '../../images/Document.jpg'
 import DataIMG from '../../images/Data.jpg'
 
 import './dashboard.css'
-import DropDownArrowIcon from '../../icons/DropDownArrowIcon'
 
 const Dashboard = () => {
      const [dropdown, setdropdown] = useState(false)
@@ -79,9 +80,7 @@ const Dashboard = () => {
                                         <div className='dashboardOverviewTitleText'>Logs</div>
                                    </div>
                                    <div className='dashboardOverviewBoxText'>437</div>
-                                   <div className='progress'>
-                                        <div className='progress-done' data-done='70' />
-                                   </div>
+                                   <ProgressBar width={'90%'} height={'7px'} percentComplete={20} />
                               </div>
                               <div className='dashboardOverviewBox border '>
                                    <div className='dashboardOverviewTitle'>
@@ -90,9 +89,7 @@ const Dashboard = () => {
                                    </div>
 
                                    <div className='dashboardOverviewBoxText'>32</div>
-                                   <div className='progress'>
-                                        <div className='progress-done' data-done='70' />
-                                   </div>
+                                   <ProgressBar width={'90%'} height={'7px'} percentComplete={35} />
                               </div>
                               <div className='dashboardOverviewBox border'>
                                    <div className='dashboardOverviewTitle'>
@@ -101,9 +98,7 @@ const Dashboard = () => {
                                    </div>
 
                                    <div className='dashboardOverviewBoxText'>68</div>
-                                   <div className='progress'>
-                                        <div className='progress-done' data-done='70' />
-                                   </div>
+                                   <ProgressBar width={'90%'} height={'7px'} percentComplete={55} />
                               </div>
                               <div className='dashboardOverviewBox'>
                                    <div className='dashboardOverviewTitle'>
@@ -112,9 +107,7 @@ const Dashboard = () => {
                                    </div>
 
                                    <div className='dashboardOverviewBoxText'>2461$</div>
-                                   <div className='progress'>
-                                        <div className='progress-done' data-done='70' />
-                                   </div>
+                                   <ProgressBar width={'90%'} height={'7px'} percentComplete={70} />
                               </div>
                          </div>
                     </div>
