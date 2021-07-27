@@ -23,9 +23,6 @@
      padding: 20px 0px;
 }
 
-.dropnNotiList {
-}
-
 .dropnNotiItem {
      display: flex;
      padding: 10px 0px;
@@ -33,6 +30,20 @@
 
 .dropnNotiItem:hover {
      background-color: #d6d9fc;
+}
+
+.dropnNotiItem:hover .dropNotiSelectBar {
+     background-color: #485aff;
+}
+
+.dropNotiSelectBar {
+     margin: -10px 0px;
+     flex: 1.5%;
+     background-color: #fafbfb;
+}
+
+.dropNotiSelectBar:hover {
+     background-color: green;
 }
 
 .dropNotiIma {

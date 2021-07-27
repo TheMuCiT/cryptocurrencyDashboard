@@ -20,7 +20,7 @@ import DataIMG from '../../images/Data.jpg'
 import './dashboard.css'
 
 const Dashboard = () => {
-     const [dropdown, setdropdown] = useState(false)
+     const [dropdown, setdropdown] = useState(true)
      const [dropdownStatus, setdropdownStatus] = useState(false)
 
      const onMouseEnter = () => {

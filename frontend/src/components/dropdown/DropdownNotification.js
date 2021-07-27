@@ -16,6 +16,7 @@ const DropdownNotification = () => {
                     <div className='dropNotiTitle'>Notifications</div>
                     <div className='dropnNotiList'>
                          <div className='dropnNotiItem'>
+                              <div className='dropNotiSelectBar' />
                               <div className='dropNotiIma'>
                                    <img src={WorkingIMG} alt='img' className='dropNotiImg' />
                               </div>
@@ -29,6 +30,7 @@ const DropdownNotification = () => {
                               <div className='dropnNotiTime'>5mins ago</div>
                          </div>
                          <div className='dropnNotiItem'>
+                              <div className='dropNotiSelectBar' />
                               <div className='dropNotiIma'>
                                    <img src={DocumentIMG} alt='img' className='dropNotiImg' />
                               </div>
@@ -42,6 +44,7 @@ const DropdownNotification = () => {
                               <div className='dropnNotiTime'>35mins ago</div>
                          </div>
                          <div className='dropnNotiItem'>
+                              <div className='dropNotiSelectBar' />
                               <div className='dropNotiIma'>
                                    <img src={DataIMG} alt='img' className='dropNotiImg' />
                               </div>
