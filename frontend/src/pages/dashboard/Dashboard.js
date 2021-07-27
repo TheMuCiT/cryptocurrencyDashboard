@@ -20,7 +20,7 @@ import DataIMG from '../../images/Data.jpg'
 import './dashboard.css'
 
 const Dashboard = () => {
-     const [dropdown, setdropdown] = useState(true)
+     const [dropdown, setdropdown] = useState(false)
      const [dropdownStatus, setdropdownStatus] = useState(false)
 
      const onMouseEnter = () => {
@@ -113,6 +113,9 @@ const Dashboard = () => {
                     </div>
                     <div className='dashboardRight'>
                          <div className='dashboardSmallTitle'>Calendar</div>
+                         <div className='dashboardCalendarFilter2'>
+                              <div style={{ color: '#485aff', fontWeight: 'bold' }}>Filter</div>
+                         </div>
                          <div className='dashboardCalendarWrapper'>
                               <div className='dashboardCalendar'>
                                    <Calendar />

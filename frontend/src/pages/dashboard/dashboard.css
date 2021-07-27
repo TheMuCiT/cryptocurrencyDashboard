@@ -369,7 +369,6 @@
 
 .verticalProgressBar {
      border-radius: 20px;
-     height: 39px;
      width: 5px;
      margin-right: 10px;
 }
@@ -423,7 +422,11 @@
      margin-left: 20px;
 }
 
-@media screen and (max-width: 1450px) {
+.dashboardCalendarFilter2 {
+     display: none;
+}
+
+@media screen and (max-width: 1590px) {
      .dashboard {
           display: flex;
           flex-direction: column;
@@ -471,9 +474,49 @@
           margin-right: 0;
      }
 
-     @media screen and (max-width: 800px) {
-          .dashboardOverviewBox {
-               flex: 50%;
+     @media screen and (max-width: 960px) {
+          .dashboardCalendarWrapper {
+               display: block;
+          }
+
+          .dashboardCalendar {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               width: 100%;
+          }
+
+          .dashboardCalendarFilter {
+               display: none;
+          }
+
+          .dashboardCalendarFilter2 {
+               width: 50%;
+               margin: 10px 0px;
+               padding-left: 20px;
+               height: 35px;
+               display: flex;
+               align-items: center;
+               justify-content: flex-start;
+               border-color: #485aff;
+               border-width: 1px;
+               border-style: solid;
+               border-radius: 5px;
+          }
+
+          .dashboardCalendarMeetings {
+               display: grid;
+               grid-template-columns: 50% 50%;
+               grid-column-gap: 0px;
+               grid-row-gap: 0px;
+          }
+          .dashboardShowtaskinfoList {
+               display: block;
+               align-items: center;
+               justify-content: center;
+          }
+          .dashboardShowtaskinfoListItem {
+               display: flex;
           }
      }
 }
