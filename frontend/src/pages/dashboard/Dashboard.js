@@ -82,7 +82,7 @@ const Dashboard = () => {
                                    <div className='dashboardOverviewBoxText'>437</div>
                                    <ProgressBar width={'90%'} height={'7px'} percentComplete={20} />
                               </div>
-                              <div className='dashboardOverviewBox border '>
+                              <div className='dashboardOverviewBox border mobile '>
                                    <div className='dashboardOverviewTitle'>
                                         <ActsIcon />
                                         <div className='dashboardOverviewTitleText'>Acts</div>
@@ -91,7 +91,7 @@ const Dashboard = () => {
                                    <div className='dashboardOverviewBoxText'>32</div>
                                    <ProgressBar width={'90%'} height={'7px'} percentComplete={35} />
                               </div>
-                              <div className='dashboardOverviewBox border'>
+                              <div className='dashboardOverviewBox border mobile2'>
                                    <div className='dashboardOverviewTitle'>
                                         <WorkersIcon />
                                         <div className='dashboardOverviewTitleText'>Workers</div>
@@ -100,7 +100,7 @@ const Dashboard = () => {
                                    <div className='dashboardOverviewBoxText'>68</div>
                                    <ProgressBar width={'90%'} height={'7px'} percentComplete={55} />
                               </div>
-                              <div className='dashboardOverviewBox'>
+                              <div className='dashboardOverviewBox mobile3 '>
                                    <div className='dashboardOverviewTitle'>
                                         <SalaryFundIcon />
                                         <div className='dashboardOverviewTitleText'>Salary fund</div>
