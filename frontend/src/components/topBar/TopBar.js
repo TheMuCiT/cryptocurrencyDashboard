@@ -28,6 +28,7 @@ const TopBar = () => {
 
      return (
           <div className='topbar'>
+               <div className='topbarMobileMenu'>---</div>
                <div className='topbarLeft'>
                     <div className='topbarSearchContainer'>
                          <div className='topbarSearchIcon'>

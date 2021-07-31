@@ -1,3 +1,7 @@
+.dashboardLevel {
+     width: 100%;
+}
+
 .dashboard {
      display: flex;
 }
@@ -160,6 +164,10 @@
 
 .dashboardCalendarEventTitle {
      margin-bottom: 5px;
+}
+
+.dashboardCalendarEventWrapper {
+     width: 80%;
 }
 
 /*Dashborad Third*/

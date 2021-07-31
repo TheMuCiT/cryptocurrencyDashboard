@@ -93,3 +93,12 @@
      padding-top: 10px;
      font-size: 12px;
 }
+
+@media screen and (max-width: 1590px) {
+     .dropNoti {
+          position: absolute;
+          left: 0;
+          width: 200%;
+          z-index: 10;
+     }
+}
