@@ -167,7 +167,7 @@
 }
 
 .dashboardCalendarEventWrapper {
-     width: 80%;
+     width: 70%;
 }
 
 /*Dashborad Third*/
@@ -483,10 +483,24 @@
      }
 
      @media screen and (max-width: 960px) {
+          .dashboardRight {
+               margin-left: 10px;
+               margin-right: 10px;
+          }
+
+          .dashboardLeft {
+               margin-left: 10px;
+               margin-right: 10px;
+          }
+
+          .dashboardCalendarMeetings {
+               margin: 5px 10px;
+          }
+
           .dashboardOverview {
                display: grid;
                grid-template-columns: 50% 50%;
-               height: 240px;
+               height: 100%;
                grid-row-gap: 20px;
                margin-bottom: 20px;
           }
@@ -522,6 +536,7 @@
           }
 
           .dashboardCalendarWrapper {
+               width: 100%;
                display: block;
           }
 

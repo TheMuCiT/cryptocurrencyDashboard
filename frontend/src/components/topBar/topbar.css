@@ -59,8 +59,8 @@
 @media screen and (max-width: 960px) {
      .topbar {
           background-color: var(--color-main);
-
           margin-left: 0;
+          margin-right: -10px;
      }
 
      .topbarInput {
