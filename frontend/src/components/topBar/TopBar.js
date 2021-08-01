@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 import Search from '../../icons/Search'
 import Star from '../../icons/Star'
@@ -7,9 +7,15 @@ import Bookmark from '../../icons/Bookmark'
 import Notification from '../../icons/Notification'
 import Profile from '../../icons/Profile'
 import DropDownArrow from '../../icons/DropDownArrow'
+import Category from '../../icons/Category'
+import Calendar from '../../icons/Calendar'
+import ToDo from '../../icons/To-Do'
+import Settings from '../../icons/Settings'
+import Projects from '../../icons/Projects'
 
 import './topbar.css'
 const TopBar = () => {
+     const [mobileActive, setmobileActive] = useState(false)
      const [mobile, setmobile] = useState(false)
 
      const WindowChange = () => {
@@ -20,6 +26,8 @@ const TopBar = () => {
           }
      }
 
+     const mobileActiveHandler = () => setmobileActive(!mobileActive)
+
      useEffect(() => {
           WindowChange()
      }, [])
@@ -28,7 +36,46 @@ const TopBar = () => {
 
      return (
           <div className='topbar'>
-               <div className='topbarMobileMenu'>---</div>
+               <div onClick={mobileActiveHandler} className='topbarMobileMenu'>
+                    ---
+                    <div className={mobileActive ? 'topbarSide active' : 'topbarSide'}>
+                         <div className='topbarSideLogo'>
+                              <Category size={80} />
+                         </div>
+                         <div className='topbarSideLinks'>
+                              <Link to='/' className='topbarSideItem'>
+                                   <div className='topbarSideItemIcon'>
+                                        <Category size={40} />
+                                   </div>
+                                   <div className='topbarSideItemText'>Dashboard</div>
+                              </Link>
+                              <Link to='/about' className='topbarSideItem'>
+                                   <div className='topbarSideItemIcon'>
+                                        <Calendar size={40} color={'white'} />
+                                   </div>
+                                   <div className='topbarSideItemText'>Calendar</div>
+                              </Link>
+                              <Link to='/about' className='topbarSideItem'>
+                                   <div className='topbarSideItemIcon'>
+                                        <ToDo size={40} color={'white'} />
+                                   </div>
+                                   <div className='topbarSideItemText'>To-Do</div>
+                              </Link>
+                              <Link to='/about' className='topbarSideItem'>
+                                   <div className='topbarSideItemIcon'>
+                                        <Settings size={40} color={'white'} />
+                                   </div>
+                                   <div className='topbarSideItemText'>Settings</div>
+                              </Link>
+                              <Link to='/about' className='topbarSideItem'>
+                                   <div className='topbarSideItemIcon'>
+                                        <Projects size={40} color={'white'} />
+                                   </div>
+                                   <div className='topbarSideItemText'>Projects</div>
+                              </Link>
+                         </div>
+                    </div>
+               </div>
                <div className='topbarLeft'>
                     <div className='topbarSearchContainer'>
                          <div className='topbarSearchIcon'>

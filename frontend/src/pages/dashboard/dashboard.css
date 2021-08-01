@@ -484,13 +484,13 @@
 
      @media screen and (max-width: 960px) {
           .dashboardRight {
-               margin-left: 10px;
-               margin-right: 10px;
+               margin-left: 5px;
+               margin-right: 5px;
           }
 
           .dashboardLeft {
-               margin-left: 10px;
-               margin-right: 10px;
+               margin-left: 5px;
+               margin-right: 5px;
           }
 
           .dashboardCalendarMeetings {
